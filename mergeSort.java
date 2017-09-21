@@ -23,11 +23,12 @@ public class Mergesort {
         //find the middle point to divide the problem 
         int middle = low + (high - low) / 2;
 
-        // divide the left half
+        // divide 
         mergesort(low, middle);
-        //divide the right half
+        //divide 
         mergesort(middle + 1, high);
-        // conquer and combine the boht part 
+
+        // conquer <-> combine the boht part 
         merge(low, middle, high);
     }
 
