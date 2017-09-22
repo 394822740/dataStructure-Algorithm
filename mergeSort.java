@@ -20,15 +20,13 @@ public class Mergesort {
             return;
         }
         
-        //find the middle point to divide the problem 
+
+
+        // divide & conquer recursively
         int middle = low + (high - low) / 2;
-
-        // divide 
         mergesort(low, middle);
-        //divide 
         mergesort(middle + 1, high);
-
-        // conquer <-> combine the boht part 
+        //combine 
         merge(low, middle, high);
     }
 
