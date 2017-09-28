@@ -1,0 +1,41 @@
+️Binary Search Algorithm
+ (aka half internal search)
+
+【Space vs Speed Tradeoff】
+Time : O(logN)
+Space: O(1)
+Space Complexity: constant
+
+
+❓When to use it?  when given a (partially) sorted array, asked to find a target
+
+❓️Essence: cut the half that doesn't contain target
+
+
+❓Key Feature:
+// left & right pointer
+// while ( left + 1 < right)
+	//mid pointer = left + (left - right)/2
+
+
+
+❓️Flow
+public static boolean binarySearch(int[] source, int target, int left, int right){
+
+	//left = 0 ; 
+	//right = source.length - 1; 
+	//while (left +1 < right)
+		// int mid = left + (right - left )/2;
+		//if target == source[mid]
+			// return true 
+		//else if target > source[mid]
+			// left = mid;
+		// else 
+			// right = mid;
+	//return false
+}
+
+
+
+
+
