@@ -54,7 +54,7 @@ static int fib(int n){
 	//since it's bottom up, so every answer is memoized  - if(memoized is neglected here)
 		// no need to return result neither
 
-	//if (not memoized)
+	//if (not memoized), bottom up calculation
 	for(int i = 2; i <=n; i++){
 		// compute the new optimal sub-solution based on the previous optimal subsolution  - bottom up = iterative approach
 		int result = map.get(i-1) + map.get(i-2);

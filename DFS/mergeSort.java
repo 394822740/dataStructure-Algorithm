@@ -20,10 +20,10 @@ public class Mergesort {
             return;
         }
         
-
-
-        // divide & conquer recursively
+        // divide 
         int middle = low + (high - low) / 2;
+
+        //conquer recursively
         mergesort(low, middle);
         mergesort(middle + 1, high);
         //combine 
